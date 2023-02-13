@@ -1,0 +1,23 @@
+#demo, .hello {
+  background-color: lightblue;
+  color: rgb(116, 121, 47);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#demo p, .hello p {
+  color: rgb(116, 121, 47);
+}
+
+.demo {
+  background-color: lightblue;
+  color: rgb(116, 121, 47);
+}
+.demo:hover {
+  background-color: red;
+}
+.demo::after {
+  content: "hey ";
+  float: left;
+}/*# sourceMappingURL=style.css.map */

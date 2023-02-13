@@ -1,0 +1,18 @@
+@import "_variables.scss";
+@import "_demo.scss";
+
+@mixin makeFloat($floatValue) {
+    float: $floatValue;
+}
+
+.demo {
+    background-color: $backgroundColor;
+    color: $textColor;
+    &:hover {     // use of pesudo class and nesting
+        background-color: red;
+    }
+    &::after {    // use of pesudo element
+        content: "hey ";
+        @include makeFloat(left);
+    }
+}

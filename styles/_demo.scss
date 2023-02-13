@@ -1,0 +1,25 @@
+@import "_variables.scss";
+
+@mixin giveHeight($h) {    // This is like a function with parameters
+    height: $h;
+}
+
+@mixin centerFlex {       // This is like a function definition
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#demo {
+    background-color: $backgroundColor;
+    color: $textColor;
+    @include giveHeight(100vh);     // This is like a function call with arguments
+    @include centerFlex();     // This is like a function call
+    p {      // Nesting of child
+        color: $textColor;
+    }
+}
+
+.hello {
+    @extend #demo;   // All the properties of #demo inherited in .hello
+}
